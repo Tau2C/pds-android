@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="top.tau2c.pds.core">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Permission required by other apps to bind to PDS Core service -->
     <permission
         android:name="top.tau2c.pds.permission.ACCESS_PDS"
         android:protectionLevel="normal"
         android:label="Access Personal Data Store"
-        android:description="@string/perm_desc_access_pds" />
+        android:description="Allows applications to store and query decentralized records via PDS Core." />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,9 +14,7 @@
 
     <application
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
         android:label="PDS Core"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
 
         <service
