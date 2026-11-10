@@ -1,0 +1,9 @@
+target/
+*.so
+*.aar
+*.apk
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
